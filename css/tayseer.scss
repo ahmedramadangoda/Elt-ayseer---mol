@@ -1,0 +1,37 @@
+// helper folder
+@import 'sass/helper/variables';
+@import 'sass/helper/mixins';
+
+// components folder
+@import 'sass/components/button';
+
+// pages folder
+@import 'sass/pages/home';
+@import 'sass/pages/about';
+@import 'sass/pages/sections';
+@import 'sass/pages/team-leader';
+@import 'sass/pages/trusted-company';
+
+// layout folder
+@import 'sass/layout/header';
+@import 'sass/layout/gridsystm';
+@import 'sass/layout/footer';
+
+
+
+body{
+    font-family: $font-cairo !important;
+    direction: rtl !important;
+}
+*{
+    transition: all .3s linear !important; 
+}
+ul{
+    @include reset-ul;
+}
+a{
+    @include reset-a-link;
+}
+hr{
+    @include main-hr;
+}
